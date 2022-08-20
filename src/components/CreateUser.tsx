@@ -1,9 +1,15 @@
+import { TextField } from "@mui/material";
+
+
 function CreateUser() {
-    return (
-      <div>
-      </div>
-    );
-  }
-  
-  export default CreateUser;
-  
+
+  /* date of birth, namn, country?, sex */
+
+  return (
+    <form>
+      <TextField/>
+    </form>
+  );
+}
+
+export default CreateUser;

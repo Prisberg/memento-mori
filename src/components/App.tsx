@@ -7,14 +7,14 @@ import Settings from "./Settings";
 function App() {
   return (
     <BrowserRouter>
-    <ErrorBoundary>
-      <Routes>
-        <Route path="" element={<MainPage />} />
-{/*         <Route path="/settings" element={user ? <Settings /> : <BadGate />} />
- */}        <Route path="*" element={<BadGate />} />
-      </Routes>
-    </ErrorBoundary>
-  </BrowserRouter >
+      <ErrorBoundary>
+        <Routes>
+          <Route path="" element={<MainPage />} />
+          {/* <Route path="/settings" element={user ? <Settings /> : <BadGate />} /> */}
+          <Route path="*" element={<BadGate />} />
+        </Routes>
+      </ErrorBoundary>
+    </BrowserRouter >
   );
 }
 
